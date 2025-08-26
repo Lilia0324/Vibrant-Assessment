@@ -1,6 +1,7 @@
 import { InventoryTable } from './components/InventoryTable'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
+import { TestResultsPanel } from './components/TestResultTable'
 
 export default function App() {
   return (
@@ -22,6 +23,8 @@ export default function App() {
         <h2 className="text-lg font-medium">2) TanStack Query Hooks</h2>
         <p className="text-sm text-gray-600">Implement <code>useTestResults</code> and <code>useUpdateTestStatus</code> in <code>src/hooks/useTestResults.ts</code> with optimistic updates.</p>
       </section>
+
+      <TestResultsPanel></TestResultsPanel>
 
       <section className="bg-white rounded-xl shadow p-4">
         <h2 className="text-lg font-medium">3) Maintenance API</h2>
