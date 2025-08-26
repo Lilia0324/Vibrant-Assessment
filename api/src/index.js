@@ -24,3 +24,9 @@ app.use('/api', samplesRoutes);
 
 const PORT = 4000;
 app.listen(PORT, () => console.log(`[api] http://localhost:${PORT}`));
+
+const { ensureSchema } = require('./db/knex');
+ensureSchema().catch((err) => {
+  console.error('Failed to initialize database schema:', err);
+  process.exit(1);
+});
