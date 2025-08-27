@@ -1,12 +1,36 @@
-# Vibrant LMS — Assessment Starter
+# Vibrant LMS — Assessment by Lilia
 
-Clean scaffold with **no solutions**. Use this to complete the assessment in **ASSESSMENT.md**.
+## Notes from Lilia
+I created separated PRs for each problem:
+
+1) Inventory table (React + TypeScript + Ant Design Table)
+
+https://github.com/Lilia0324/Vibrant-Assessment/pull/1
+
+2) Test results hooks (TanStack Query)
+
+https://github.com/Lilia0324/Vibrant-Assessment/pull/2
+
+3) Maintenance API (Express + Knex)
+
+https://github.com/Lilia0324/Vibrant-Assessment/pull/3
+
+4) Sample submission form (React + Ant Design Form)
+
+https://github.com/Lilia0324/Vibrant-Assessment/pull/4
+
+5) Status badge (Tailwind + accessibility)
+
+https://github.com/Lilia0324/Vibrant-Assessment/pull/5
+
+Please check each PR for detailed descriptions, screenshots and notes from me. 
+
 
 ## What’s here
 - `web/` — React + TypeScript + Vite + TanStack Query + Tailwind (blank components & hooks)
-- `api/` — Node/Express + Knex (sqlite3 dev-ready) with route stubs returning **501 Not Implemented**
+- `api/` — Node/Express + Knex (sqlite3 dev-ready) with route stubs
 
-## Run
+## How to run
 ### API
 ```bash
 cd api
@@ -14,7 +38,6 @@ npm i
 npm start
 ```
 - Starts on **http://localhost:4000**
-- You will implement DB wiring, auth, and endpoints per ASSESSMENT.md.
 
 ### Web
 ```bash
@@ -24,11 +47,3 @@ npm run dev
 ```
 - Starts on **http://localhost:5173**
 - Proxies `/api` → `http://localhost:4000`
-- UI shows TODO sections and placeholder components.
-
-## Contributing your answers
-- Implement directly in this repo; keep commits small and descriptive.
-- Update the README with any decisions or deviations.
-
-
-**Note:** The assessment requires using **Ant Design Table and Form** for the inventory table and sample form. The web project already includes `antd`.
