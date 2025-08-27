@@ -2,6 +2,7 @@ import { InventoryTable } from './components/InventoryTable'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import { TestResultsPanel } from './components/TestResultTable'
+import { SampleForm } from './components/SampleForm';
 
 export default function App() {
   return (
@@ -35,6 +36,8 @@ export default function App() {
         <h2 className="text-lg font-medium">4) Sample Form</h2>
         <p className="text-sm text-gray-600">Build <code>SampleForm</code> in <code>src/components/SampleForm.tsx</code> with client/server validation parity.</p>
       </section>
+
+      <SampleForm></SampleForm>
 
       <section className="bg-white rounded-xl shadow p-4">
         <h2 className="text-lg font-medium">5) Status Badge</h2>
