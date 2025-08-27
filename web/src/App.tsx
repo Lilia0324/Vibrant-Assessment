@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import { TestResultsPanel } from './components/TestResultTable'
 import { SampleForm } from './components/SampleForm';
+import { StatusBadge } from './components/StatusBadge';
 
 export default function App() {
   return (
@@ -43,6 +44,25 @@ export default function App() {
         <h2 className="text-lg font-medium">5) Status Badge</h2>
         <p className="text-sm text-gray-600">Implement <code>StatusBadge</code> in <code>src/components/StatusBadge.tsx</code> with accessible Tailwind styles.</p>
       </section>
+
+      <div className="flex flex-col space-y-4 p-4">
+        <div className="flex items-center space-x-2">
+          <span>Order #12345:</span>
+          <StatusBadge status="pending" />
+        </div>
+        <div className="flex items-center space-x-2">
+          <span>Order #67890:</span>
+          <StatusBadge status="in-progress" />
+        </div>
+        <div className="flex items-center space-x-2">
+          <span>Order #98765:</span>
+          <StatusBadge status="completed" />
+        </div>
+        <div className="flex items-center space-x-2">
+          <span>Order #54321:</span>
+          <StatusBadge status="failed" />
+        </div>
+      </div>
     </div>
     </Router>
   )
